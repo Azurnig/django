@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,14 +9,14 @@
   <meta name="description" content="HTML5 website template">
   <meta name="keywords" content="global, template, html, sass, jquery">
   <meta name="author" content="Bucky Maler">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="{% static 'FB/assets/css/main.css' %}">
 </head>
 <body>
 
 <!-- notification for small viewports and landscape oriented smartphones -->
 <div class="device-notification">
   <a class="device-notification--logo" href="#0">
-    <img src="assets/img/logo.png" alt="Global">
+    <img src="{% static 'FB/assets/img/logo.png' %}" alt="Global">
     <p>Global</p>
   </a>
   <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
@@ -273,7 +274,7 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="assets/js/functions-min.js"></script>
+<script>window.jQuery || document.write('<script src="{% static 'FB/assets/js/vendor/jquery-2.2.4.min.js' %}"><\/script>')</script>
+<script src="{% static 'FB/assets/js/functions-min.js' %}"></script>
 </body>
 </html>
